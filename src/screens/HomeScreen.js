@@ -15,6 +15,7 @@ import {useNavigate} from "react-router-dom";
 import {isEmpty} from "../Constants";
 import CloseIcon from "@mui/icons-material/Close";
 import RefreshIcon from "@mui/icons-material/Refresh";
+import Toolb from '../components/ToolBar/Toolbar';
 
 const HomeScreen = ({getScheduleList, changeSchedule, list, schedule, loading, errors}) => {
     const navigate = useNavigate();
@@ -54,8 +55,14 @@ const HomeScreen = ({getScheduleList, changeSchedule, list, schedule, loading, e
 
     return (
         <>
+
+    <Toolb />
+        
             <AppBar position="static">
+                
+                 
                 <Toolbar>
+                 
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Class Schedule for HiLCoE
                     </Typography>
